@@ -1,0 +1,448 @@
+{
+    "title": "Explicit Representation of Point Set",
+    "pathToSources": "Courses/MathForComputerGraphics/Chapter 1/Block 1/",
+    "steps": [
+        {
+            "speaker": "Teacher",
+            "message": "Hey there, in this part we’re going to explore how to define a set of points explicitly.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "An explicit representation can be as simple as listing the points in the set.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "For example: {[0,0], [1,2], [2,4], [3,6]} is a set of four points.",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "gridBounds": {
+                        "minX": -1,
+                        "maxX": 5,
+                        "minY": -1,
+                        "maxY": 7
+                    },
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "pt0",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    0,
+                                    0
+                                ],
+                                "label": "P0"
+                            }
+                        },
+                        {
+                            "id": "pt1",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    1,
+                                    2
+                                ],
+                                "label": "P1"
+                            }
+                        },
+                        {
+                            "id": "pt2",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    2,
+                                    4
+                                ],
+                                "label": "P2"
+                            }
+                        },
+                        {
+                            "id": "pt3",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    3,
+                                    6
+                                ],
+                                "label": "P3"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Another, more interesting, way is to specify a formula or rule that generates each point in a set.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "For example, the explicit representation of a linear function can look like this \n{[x, y] | y = x + 2}.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Notice that the condition expresses y directly in terms of x.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "This explicit equation tells us how to compute the y value by putting in x values.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "It’s like a juicer: you put in an orange (x), press it, and the machine gives you orange juice (y).",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "juicer.png",
+                "height": 400
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Let’s take a look at how the explicit form of a line helps us plot the points step by step.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Fill in this table for the line y = x + 2. Start with x = -1.",
+            "contentType": "Table",
+            "interaction": "MultipleChoice",
+            "table": {
+                "header": [
+                    "x",
+                    "y"
+                ],
+                "data": [
+                    [
+                        "-1",
+                        ""
+                    ],
+                    [
+                        "2",
+                        ""
+                    ],
+                    [
+                        "4",
+                        ""
+                    ]
+                ],
+                "highlightedCells": [
+                    1
+                ]
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "0",
+                        "isCorrect": false,
+                        "feedback": "Check again. y = x + 2 when x = -1."
+                    },
+                    {
+                        "text": "1",
+                        "isCorrect": true,
+                        "feedback": "Correct! -1 + 2 = 1."
+                    },
+                    {
+                        "text": "2",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Now compute y when x = 2. (line: y = x + 2)",
+            "contentType": "Table",
+            "interaction": "MultipleChoice",
+            "table": {
+                "header": [
+                    "x",
+                    "y"
+                ],
+                "data": [
+                    [
+                        "-1",
+                        "1"
+                    ],
+                    [
+                        "2",
+                        ""
+                    ],
+                    [
+                        "4",
+                        ""
+                    ]
+                ],
+                "highlightedCells": [
+                    3
+                ]
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "4",
+                        "isCorrect": true,
+                        "feedback": "Yes! y = 2 + 2 = 4"
+                    },
+                    {
+                        "text": "5",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "1",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "And now for x = 4. (line: y = x + 2)",
+            "contentType": "Table",
+            "interaction": "MultipleChoice",
+            "table": {
+                "header": [
+                    "x",
+                    "y"
+                ],
+                "data": [
+                    [
+                        "-1",
+                        "1"
+                    ],
+                    [
+                        "2",
+                        "4"
+                    ],
+                    [
+                        "4",
+                        ""
+                    ]
+                ],
+                "highlightedCells": [
+                    5
+                ]
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "6",
+                        "isCorrect": true,
+                        "feedback": "Exactly! y = 4 + 2 = 6"
+                    },
+                    {
+                        "text": "7",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "2",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Very well...",
+            "contentType": "Table",
+            "interaction": "Continue",
+            "table": {
+                "header": [
+                    "x",
+                    "y"
+                ],
+                "data": [
+                    [
+                        "-1",
+                        "1"
+                    ],
+                    [
+                        "2",
+                        "4"
+                    ],
+                    [
+                        "4",
+                        "6"
+                    ]
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "You’ve just plotted three points that lie on the line defined by\ny = x + 2.",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true,
+                    "gridBounds": {
+                        "minX": -1,
+                        "maxX": 9,
+                        "minY": -1,
+                        "maxY": 9
+                    }
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "line",
+                            "objectType": "Function",
+                            "functionData": {
+                                "expression": "x + 2"
+                            }
+                        },
+                        {
+                            "id": "pt1",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    -1,
+                                    1
+                                ],
+                                "label": "A"
+                            }
+                        },
+                        {
+                            "id": "pt2",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    2,
+                                    4
+                                ],
+                                "label": "B"
+                            }
+                        },
+                        {
+                            "id": "pt1",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    -1,
+                                    1
+                                ],
+                                "label": "A"
+                            }
+                        },
+                        {
+                            "id": "pt2",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    2,
+                                    4
+                                ],
+                                "label": "B"
+                            }
+                        },
+                        {
+                            "id": "pt3",
+                            "objectType": "Point",
+                            "pointData": {
+                                "position": [
+                                    4,
+                                    6
+                                ],
+                                "label": "C"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "We can generate as many points as we want this way — the rule gives us the whole set.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Explicit representations are like a recipe — you feed it x, and it tells you exactly where the point goes.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Let’s match some explicit representation with the shapes they represent. (note: x ∈ ℝ)",
+            "contentType": "OnlyText",
+            "interaction": "Pairing",
+            "pairs": [
+                {
+                    "id": 0,
+                    "left": "S = {[x, x²]}",
+                    "right": "Parabola"
+                },
+                {
+                    "id": 1,
+                    "left": "S = {[x, 3x + 1]}",
+                    "right": "Line"
+                },
+                {
+                    "id": 2,
+                    "left": "S = {[x, sin(x)]}",
+                    "right": "Wave"
+                }
+            ]
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Let’s finish up with a short recap",
+            "contentType": "OnlyText",
+            "interaction": "Flashcards",
+            "flashcards": [
+                {
+                    "frontText": "What is an explicit representation of a set of points?",
+                    "backText": "A direct description of the set, e.g. by listing points or giving a formula that directly generates the points."
+                },
+                {
+                    "frontText": "Is this an explicit equation? x² + y² = 1",
+                    "backText": "No, that’s implicit."
+                },
+                {
+                    "frontText": "Is this an explicit description? ‘All points where x is 0, and y ranges from 1 to 5’",
+                    "backText": "Yes"
+                },
+                {
+                    "frontText": "An explicit form tells me ...",
+                    "backText": "… how to generate each point in the set."
+                },
+                {
+                    "frontText": "Is this explicit form? \ny = x²",
+                    "backText": "Yes"
+                },
+                {
+                    "frontText": "Is this explicit form? \nS = {(1,2), (3,4), (5,6)}",
+                    "backText": "Yes"
+                },
+                {
+                    "frontText": "How does explicit form differ from implicit?",
+                    "backText": "Explicit: directly generates the points. \nImplicit: gives a condition they must satisfy."
+                }
+            ]
+        }
+    ]
+}

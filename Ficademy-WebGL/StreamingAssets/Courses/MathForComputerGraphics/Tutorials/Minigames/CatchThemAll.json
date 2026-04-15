@@ -1,0 +1,161 @@
+{
+    "title": "Catch Them All Minigame",
+    "description": "Fly a rocket along a curve to collect all the stars!",
+    "pathToSources": "Courses/MathForComputerGraphics/Tutorials/Minigames/",
+    "steps": [
+        {
+            "speaker": "Teacher",
+            "message": "Welcome to Catch Them All! Your mission is to fly along a trajectory and collect all the stars.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Here is the playing field: a rocket starting on the left and stars scattered along the curve.",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "gridBounds": {
+                        "minX": -7,
+                        "maxX": 7,
+                        "minY": -4,
+                        "maxY": 6
+                    },
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "rocket",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "tag": "rocket",
+                                "position": [
+                                    -3,
+                                    -3
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star1",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "tag": "star",
+                                "position": [
+                                    -2,
+                                    -2.135
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star2",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "tag": "star",
+                                "position": [
+                                    -1,
+                                    -2.632
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star3",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "tag": "star",
+                                "position": [
+                                    0,
+                                    -2
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star4",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "tag": "star",
+                                "position": [
+                                    1,
+                                    -0.281
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star5",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "tag": "star",
+                                "position": [
+                                    2,
+                                    4.389
+                                ],
+                                "rotation": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Your goal is to guide the rocket along the curve so it catches all the stars.",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": false
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Which trajectory do we need to follow to collect all the stars?",
+            "contentType": "Geometry",
+            "interaction": "MultipleChoice",
+            "geometry": {
+                "isNewScene": false
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "y = 2x + 3",
+                        "isCorrect": false,
+                        "feedback": "They don't seem to be on a line."
+                    },
+                    {
+                        "text": "y = log(x) - 2",
+                        "isCorrect": false,
+                        "feedback": "Getting close, but try exponential, not logarithm."
+                    },
+                    {
+                        "text": "y = eˣ - 3",
+                        "isCorrect": true,
+                        "feedback": "Great choice!"
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Mission accomplished! Great job navigating the rocket.",
+            "contentType": "Transformation",
+            "interaction": "Continue",
+            "transformation": {
+                "id": "launch",
+                "objectId": "rocket",
+                "type": "Trajectory",
+                "trajectoryData": {
+                    "expression": "exp(x) - 3",
+                    "domainEnd": 2
+                }
+            }
+        }
+    ]
+}

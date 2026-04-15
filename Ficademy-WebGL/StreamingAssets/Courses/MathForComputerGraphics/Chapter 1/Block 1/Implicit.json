@@ -1,0 +1,387 @@
+{
+    "title": "Implicit Representation of Point Set",
+    "pathToSources": "Courses/MathForComputerGraphics/Chapter 1/Block 1/",
+    "steps": [
+        {
+            "speaker": "Teacher",
+            "message": "In mathematics, we often describe sets of points in different ways.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "One approach is to give a condition that every point must satisfy — for example, that all points must satisfy the equation x + y = 5.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "implicit-line.png",
+                "height": 700
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "That's called an implicit condition, and it gives us an implicit representation of the set.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Think of it like a rule: ‘you are an adult if you’re over 18.’ The rule decides who belongs to the group.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "For instance, the condition x² + y² = 1 describes all points on a circle.",
+            "interaction": "Continue",
+            "contentType": "Geometry",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "showGridLines": false,
+                    "showAxes": true,
+                    "showNumbers": true,
+                    "gridBounds": {
+                        "minX": -1,
+                        "maxX": 1,
+                        "minY": -1,
+                        "maxY": 1
+                    }
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "circle1",
+                            "objectType": "Circle",
+                            "circleData": {
+                                "center": [
+                                    0,
+                                    0
+                                ],
+                                "radius": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "So here, the circle is not listed point by point. Instead, the equation itself defines the whole set.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Formally, we can describe this circle as { [x, y] ∈ ℝ² ∣ x² + y² = 1 }.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Let's now review some important implicit equations.",
+            "contentType": "OnlyText",
+            "interaction": "None"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "x - y + 2 = 0 is an implicit equation of a ____.",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "parabola",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "hyperbola",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "line",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "point",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Match each implicit equation with its geometric shape.",
+            "contentType": "OnlyText",
+            "interaction": "Pairing",
+            "pairs": [
+                {
+                    "id": 0,
+                    "left": "x+2y-3=0",
+                    "right": "line"
+                },
+                {
+                    "id": 1,
+                    "left": "x² + y² = 5",
+                    "right": "circle"
+                },
+                {
+                    "id": 2,
+                    "left": "x² - y² = 4",
+                    "right": "hyperbola"
+                },
+                {
+                    "id": 3,
+                    "left": "x² - 4y = 0",
+                    "right": "parabola"
+                }
+            ]
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Now let’s take a look at what we can do with the equation for line x+2y-3=0.",
+            "interaction": "Continue",
+            "contentType": "Geometry",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true,
+                    "gridBounds": {
+                        "minX": -5,
+                        "maxX": 5,
+                        "minY": -5,
+                        "maxY": 5
+                    }
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "line1",
+                            "objectType": "Function",
+                            "functionData": {
+                                "expression": "-0.5x + 1.5",
+                                "label": ""
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "The equation isn’t a recipe for drawing the line. It’s just a test: does the point satisfy it? Then it belongs.",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": false,
+                "geometryObjects": {}
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Does point A = [3, 2] lie on the line defined by x+2y-3=0?",
+            "interaction": "MultipleChoice",
+            "contentType": "Geometry",
+            "geometry": {
+                "isNewScene": false,
+                "geometryObjects": {}
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Yes",
+                        "isCorrect": false,
+                        "feedback": "No, because 3 + 2*2 - 3 ≠ 0."
+                    },
+                    {
+                        "text": "No",
+                        "isCorrect": true,
+                        "feedback": "Correct! This point doesn’t satisfy the equation.",
+                        "action": {
+                            "actionType": "Geometric",
+                            "geometricData": {
+                                "isNewScene": false,
+                                "geometryObjects": {
+                                    "Add": [
+                                        {
+                                            "id": "ptA",
+                                            "objectType": "Point",
+                                            "pointData": {
+                                                "position": [
+                                                    3,
+                                                    2
+                                                ],
+                                                "label": "A"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Does point B = [5, -1] lie on the line x+2y-3=0?",
+            "interaction": "MultipleChoice",
+            "contentType": "Geometry",
+            "geometry": {
+                "isNewScene": false,
+                "geometryObjects": {}
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Yes",
+                        "isCorrect": true,
+                        "feedback": "Well done! 5 - 2 - 3 = 0.",
+                        "action": {
+                            "actionType": "Geometric",
+                            "geometricData": {
+                                "isNewScene": false,
+                                "geometryObjects": {
+                                    "Add": [
+                                        {
+                                            "id": "ptB",
+                                            "objectType": "Point",
+                                            "pointData": {
+                                                "position": [
+                                                    5,
+                                                    -1
+                                                ],
+                                                "label": "B"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "text": "No",
+                        "isCorrect": false,
+                        "feedback": "Not quite — this point actually *does* satisfy the equation."
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "And you know what? Equations aren't the only way to describe point sets implicitly – inequalities or other conditions work too!",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "For example: x² + y² ≤ 4 represents all points inside or on the circle with radius 2.",
+            "interaction": "Continue",
+            "contentType": "Geometry",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true,
+                    "gridBounds": {
+                        "minX": -3,
+                        "maxX": 3,
+                        "minY": -3,
+                        "maxY": 3
+                    }
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "circleFill",
+                            "objectType": "Circle",
+                            "circleData": {
+                                "center": [
+                                    0,
+                                    0
+                                ],
+                                "radius": 2,
+                                "filled": true,
+                                "color": {
+                                    "r": 0.5412,
+                                    "g": 0.7882,
+                                    "b": 0.149,
+                                    "a": 0.5
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Does point [1,1] belong to the set defined by x² + y² ≤ 4?",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Yes",
+                        "isCorrect": true,
+                        "feedback": "Yes, because 1² + 1² = 2 ≤ 4"
+                    },
+                    {
+                        "text": "No",
+                        "isCorrect": false,
+                        "feedback": "Actually, it does — 1² + 1² = 2, which is less than 4."
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Can you guess which equation generated each set? x² + y² = 4 and x² + y² ≤ 4.",
+            "contentType": "Image",
+            "interaction": "MultipleChoice",
+            "imageData": {
+                "imageName": "implicit-1.png",
+                "height": 550
+            },
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Left is ≤, Right is =",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Left is =, Right is ≤",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Both are =",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Let’s finish up with a short recap",
+            "contentType": "OnlyText",
+            "interaction": "Flashcards",
+            "flashcards": [
+                {
+                    "frontText": "How are sets of points described implicitly?",
+                    "backText": "By giving a condition that all points in the set satisfy"
+                },
+                {
+                    "frontText": "How do you check if a point belongs to a set defined implicitly?",
+                    "backText": "Substitute the point’s coordinates into the condition. If it satisfies it, the point belongs."
+                },
+                {
+                    "frontText": "What kind of sets can be described implicitly?",
+                    "backText": "Any geometric shape like lines, curves, surfaces, regions, etc., using equations or inequalities."
+                }
+            ]
+        }
+    ]
+}

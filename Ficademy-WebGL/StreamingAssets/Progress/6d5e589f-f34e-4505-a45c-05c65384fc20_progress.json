@@ -1,0 +1,76 @@
+{
+  "courseId": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+  "chaptersProgress": {
+    "f8307cb1-cc4e-4466-8579-a58f981c38c4": {
+      "completed": false,
+      "lessonsProgress": {},
+      "practiceProgress": {
+        "926d7d71-fdc0-42b6-a29c-75ed26203b70": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "d89a39e4-5f88-4cd2-8c83-451ec03251bd": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "4fc4f92b-0a14-4082-bb77-18464c389739": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "54772450-e5f6-41f2-8d06-72ef3db663c2": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "b97efe0e-806f-4a7e-bbd8-bf273b604afd": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "192358d9-b26c-4f37-9df4-420a37cbfbfb": {
+          "completed": false,
+          "lastVisited": null
+        }
+      },
+      "completedLessons": 0,
+      "totalLessons": 8
+    },
+    "ab3430ec-7e66-4858-9e99-842d81df2168": {
+      "completed": false,
+      "lessonsProgress": {},
+      "practiceProgress": {
+        "f3beae86-1346-471c-9b47-8039a95db018": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "37bce762-9344-4c44-8499-e10c256a6f8e": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "e5880193-641c-406b-aa50-d9842e851cbf": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "34c0663a-4510-4efc-a482-ea3076680119": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "a816dd4d-612a-421e-a71e-94b1e3f2a78e": {
+          "completed": false,
+          "lastVisited": null
+        },
+        "9935d6ec-e45f-4f29-9a3f-120b8aa4f3b7": {
+          "completed": false,
+          "lastVisited": null
+        }
+      },
+      "completedLessons": 0,
+      "totalLessons": 0
+    },
+    "c8980e59-8901-4f93-87e8-35ddae1a5b30": {
+      "completed": false,
+      "lessonsProgress": {},
+      "practiceProgress": {},
+      "completedLessons": 0,
+      "totalLessons": 6
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "c479b6da-0578-4da8-9249-8dad6f320094",
+  "name": "Intro",
+  "lectures": [
+    {
+      "id": "43d4406f-91b9-48e4-87d8-e862e61fc94a",
+      "name": "Intro",
+      "description": "",
+      "jsonFileName": "Intro.json",
+      "lectureType": 0,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30",
+      "BlockID": "c479b6da-0578-4da8-9249-8dad6f320094"
+    }
+  ],
+  "practice": [],
+  "Path": "C:/skola/a-MGR/Diplomka/ficademy/Assets/StreamingAssets\\Courses\\MathForComputerGraphics\\Tutorials\\Intro",
+  "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+  "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30"
+}

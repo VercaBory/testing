@@ -1,0 +1,70 @@
+[
+    {
+        "speaker": "Teacher",
+        "message": "Numbers can be represented in various systems. Let's look at the number 5.",
+        "contentType": "OnlyText",
+        "interaction": "Continue"
+    },
+    {
+        "speaker": "Teacher",
+        "message": "In decimal, 5 is written as 5. In binary, it is 101.",
+        "contentType": "OnlyText",
+        "interaction": "Continue"
+    },
+    {
+        "speaker": "Teacher",
+        "message": "Roman numeral for 5 is V.",
+        "contentType": "OnlyText",
+        "interaction": "Continue"
+    },
+    {
+        "speaker": "Teacher",
+        "message": "Select all correct representations of the number 5.",
+        "contentType": "OnlyText",
+        "interaction": "MultipleChoice",
+        "multipleChoice": {
+            "answers": [
+                {
+                    "id": "a",
+                    "text": "101 (binary)",
+                    "isCorrect": true
+                },
+                {
+                    "id": "b",
+                    "text": "5 (decimal)",
+                    "isCorrect": true
+                },
+                {
+                    "id": "c",
+                    "text": "V (Roman)",
+                    "isCorrect": true
+                },
+                {
+                    "id": "d",
+                    "text": "10 (decimal)",
+                    "isCorrect": false
+                }
+            ]
+        }
+    },
+    {
+        "speaker": "Teacher",
+        "message": "Now let's review the representations of the number 5.",
+        "contentType": "OnlyText",
+        "interaction": "Flashcards",
+        "flashcards": [
+            {
+                "frontText": "Binary",
+                "backText": "101"
+            },
+            {
+                "frontText": "Decimal",
+                "backText": "5"
+            },
+            {
+                "frontText": "Roman",
+                "backText": "V"
+            }
+        ]
+    }
+]

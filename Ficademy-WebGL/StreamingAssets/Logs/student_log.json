@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": "2026-03-29T13:18:53.1349981Z",
+    "eventType": "LectureTabClicked",
+    "details": "User clicked on Lectures tab"
+  },
+  {
+    "timestamp": "2026-03-29T13:18:56.3168169Z",
+    "eventType": "LectureOpened",
+    "details": "ID: c36a81df-2b1c-4abe-b492-2a5564005540, Name: Parametric, Type: MathGuide"
+  },
+  {
+    "timestamp": "2026-03-29T13:18:56.7326911Z",
+    "eventType": "StepShown",
+    "details": "Message: We already know that explicit representations let us compute points using formulas like y = x² - 5., ContentType: OnlyText, Interaction: Continue"
+  },
+  {
+    "timestamp": "2026-03-29T13:18:58.0432218Z",
+    "eventType": "LectureTabClicked",
+    "details": "User clicked on Lectures tab"
+  },
+  {
+    "timestamp": "2026-03-29T13:18:58.7810881Z",
+    "eventType": "HomeTabClicked",
+    "details": "User clicked on home tab"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:15.6622806Z",
+    "eventType": "LectureTabClicked",
+    "details": "User clicked on Lectures tab"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:17.3046256Z",
+    "eventType": "LectureOpened",
+    "details": "ID: ab991f0e-7d91-45f8-af87-8b379bccdfb4, Name: Explicit, Type: MathGuide"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:17.5696544Z",
+    "eventType": "StepShown",
+    "details": "Message: Hey there, in this part we’re going to explore how to define a set of points explicitly., ContentType: OnlyText, Interaction: Continue"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:18.4615823Z",
+    "eventType": "StepShown",
+    "details": "Message: An explicit representation can be as simple as listing the points in the set., ContentType: OnlyText, Interaction: Continue"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:18.7921625Z",
+    "eventType": "StepShown",
+    "details": "Message: For example: {[0,0], [1,2], [2,4], [3,6]} is a set of four points., ContentType: Geometry, Interaction: Continue"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:19.1750321Z",
+    "eventType": "StepShown",
+    "details": "Message: Another, more interesting, way is to specify a formula or rule that generates each point in a set., ContentType: OnlyText, Interaction: Continue"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:19.5215415Z",
+    "eventType": "StepShown",
+    "details": "Message: For example, the explicit representation of a linear function can look like this \n{[x, y] | y = x + 2}., ContentType: OnlyText, Interaction: Continue"
+  },
+  {
+    "timestamp": "2026-03-29T13:22:19.8976633Z",
+    "eventType": "StepShown",
+    "details": "Message: Notice that the condition expresses y directly in terms of x., ContentType: OnlyText, Interaction: Continue"
+  }
+]

@@ -1,0 +1,137 @@
+{
+    "title": "Intro Quiz for Platformer Minigame",
+    "pathToSources": "Courses/MathForComputerGraphics/Tutorials/Minigames/",
+    "steps": [
+        {
+            "question": "Welcome to the Platformer! This game is for...",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Nothing",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Reinforcing my knowledge",
+                        "isCorrect": true
+                    }
+                ]
+            }
+        },
+        {
+            "question": "Wrong answers make you fall, correct ones make you jump up.",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Fall",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Jump up",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Fall",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Fall",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "question": "What is your goal in this quiz game?",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Stay on the ground",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Fall as often as possible",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Reach the highest platform",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Avoid answering any questions",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "question": "Which number is a prime?",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "4",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "6",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "7",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "8",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "question": "What is the capital of France?",
+            "imagePath": "paris.jpg",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Berlin",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Madrid",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Paris",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Rome",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "Venus",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Mars",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Jupiter",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Mercury",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "c0bbcd16-c577-4752-822f-63120ee0959c",
+  "name": "Minigames",
+  "lectures": [
+    {
+      "id": "1ba23a43-afd8-4a68-bdf1-4eb66e1e2314",
+      "name": "Math Guide",
+      "description": "",
+      "jsonFileName": "MathGuide.json",
+      "lectureType": 0,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30",
+      "BlockID": "c0bbcd16-c577-4752-822f-63120ee0959c"
+    },
+    {
+      "id": "b642cadd-70e4-4e17-be27-9366bf867531",
+      "name": "Platformer",
+      "description": "",
+      "jsonFileName": "Platformer.json",
+      "lectureType": 1,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30",
+      "BlockID": "c0bbcd16-c577-4752-822f-63120ee0959c"
+    },
+    {
+      "id": "003a7e2e-8a67-4bf5-9890-ff37cbd597ca",
+      "name": "Guess What",
+      "description": "",
+      "jsonFileName": "GuessWhat.json",
+      "lectureType": 2,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30",
+      "BlockID": "c0bbcd16-c577-4752-822f-63120ee0959c"
+    },
+    {
+      "id": "132e3cad-ca65-4b67-883a-d288cb770815",
+      "name": "Plane Landing",
+      "description": "",
+      "jsonFileName": "PlaneLanding.json",
+      "lectureType": 3,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30",
+      "BlockID": "c0bbcd16-c577-4752-822f-63120ee0959c"
+    },
+    {
+      "id": "fd466284-e7da-4f81-8a8c-0e71a973c69b",
+      "name": "Catch Them All",
+      "description": "",
+      "jsonFileName": "CatchThemAll.json",
+      "lectureType": 4,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30",
+      "BlockID": "c0bbcd16-c577-4752-822f-63120ee0959c"
+    }
+  ],
+  "practice": [],
+  "Path": "C:/skola/a-MGR/Diplomka/ficademy/Assets/StreamingAssets\\Courses\\MathForComputerGraphics\\Tutorials\\Minigames",
+  "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+  "ChapterID": "c8980e59-8901-4f93-87e8-35ddae1a5b30"
+}

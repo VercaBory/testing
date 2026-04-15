@@ -1,0 +1,61 @@
+{
+  "id": "aa20e800-4082-4578-85b1-90dfb55b3520",
+  "name": "Point Sets",
+  "lectures": [
+    {
+      "id": "f210dcd8-16d5-4bb7-ab75-298e94d3a03d",
+      "name": "Implicit",
+      "description": "",
+      "jsonFileName": "Implicit.json",
+      "lectureType": 0,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "f8307cb1-cc4e-4466-8579-a58f981c38c4",
+      "BlockID": "aa20e800-4082-4578-85b1-90dfb55b3520"
+    },
+    {
+      "id": "ab991f0e-7d91-45f8-af87-8b379bccdfb4",
+      "name": "Explicit",
+      "description": "",
+      "jsonFileName": "Explicit.json",
+      "lectureType": 0,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "f8307cb1-cc4e-4466-8579-a58f981c38c4",
+      "BlockID": "aa20e800-4082-4578-85b1-90dfb55b3520"
+    },
+    {
+      "id": "c36a81df-2b1c-4abe-b492-2a5564005540",
+      "name": "Parametric",
+      "description": "",
+      "jsonFileName": "Parametric.json",
+      "lectureType": 0,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "f8307cb1-cc4e-4466-8579-a58f981c38c4",
+      "BlockID": "aa20e800-4082-4578-85b1-90dfb55b3520"
+    },
+    {
+      "id": "505b9575-c051-4cbd-8098-f8f9057ccdbe",
+      "name": "Review",
+      "description": "",
+      "jsonFileName": "Review.json",
+      "lectureType": 0,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "f8307cb1-cc4e-4466-8579-a58f981c38c4",
+      "BlockID": "aa20e800-4082-4578-85b1-90dfb55b3520"
+    }
+  ],
+  "practice": [
+    {
+      "id": "926d7d71-fdc0-42b6-a29c-75ed26203b70",
+      "name": "Point Sets",
+      "description": "Platformer",
+      "jsonFileName": "Practice1.json",
+      "lectureType": 1,
+      "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+      "ChapterID": "f8307cb1-cc4e-4466-8579-a58f981c38c4",
+      "BlockID": "aa20e800-4082-4578-85b1-90dfb55b3520"
+    }
+  ],
+  "Path": "C:/skola/a-MGR/Diplomka/ficademy/Assets/StreamingAssets\\Courses\\MathForComputerGraphics\\Chapter 1\\Block 1",
+  "CourseID": "6d5e589f-f34e-4505-a45c-05c65384fc20",
+  "ChapterID": "f8307cb1-cc4e-4466-8579-a58f981c38c4"
+}

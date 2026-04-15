@@ -1,0 +1,204 @@
+{
+  "title": "Barycentric Coordinates in 2D",
+  "pathToSources": "Courses/MathForComputerGraphics/Chapter 1/Block 2/",
+  "steps": [
+    {
+      "speaker": "Teacher",
+      "message": "Today we’ll explore barycentric coordinates in 2D—using vertices of a triangle as our reference.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Assistant",
+      "message": "Just like on a line, we weight the reference points — but now there are three points and three weights (α, β, γ) that sum to 1.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Let’s break down how barycentric coordinates describe any point P in the plane:",
+      "contentType": "Image",
+      "interaction": "Continue",
+      "imageData": {
+        "imageName": "barycentric-intro.png",
+        "height": 560
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "We express P as a weighted sum of the triangle’s vertices: \nP = αA + βB + γC.",
+      "contentType": "OnlyText",
+      "interaction": "Continue",
+      "saveFact": true,
+      "factData": {
+        "text1": "Point P in 2D Barycentric coords",
+        "text2": "can be expressed as a weighted sum of the vertices: P = αA + βB + γC, \nwhere α + β + γ = 1 and A, B, C are the reference points (triangle's vertices).",
+        "speaker": "Teacher"
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "The weights α, β, and γ always add up to 1.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Assistant",
+      "message": "Each weight tells us how much influence its vertex has on P’s position.",
+      "contentType": "OnlyText",
+      "interaction": "Continue",
+      "saveFact": true,
+      "factData": {
+        "text1": "Barycentric weights",
+        "text2": "Weights sum up to 1. Each weight (α, β, γ) indicates the influence of its corresponding vertex (A, B, C) on the point P's position.",
+        "speaker": "Teacher"
+      }
+    },
+    {
+      "speaker": "Assistant",
+      "message": "If all three weights are between 0 and 1, then P stays inside the triangle.",
+      "contentType": "Image",
+      "interaction": "Continue",
+      "imageData": {
+        "imageName": "barycentric-inside.png",
+        "height": 560
+      },
+      "saveFact": true,
+      "factData": {
+        "text1": "Barycentric weights",
+        "text2": "If all weights (α, β, γ) are between 0 and 1, then point P lies inside the triangle ABC.",
+        "speaker": "Assistant"
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Now let’s see what happens if we introduce negative weights.",
+      "contentType": "OnlyText",
+      "interaction": "MultipleChoice",
+      "multipleChoice": {
+        "answers": [
+          {
+            "text": "A negative weight α pushes P outside along the opposite side.",
+            "isCorrect": true
+          },
+          {
+            "text": "Negative weight α keeps P closer to A.",
+            "isCorrect": false
+          }
+        ]
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Exactly! If α is negative, then P is in the half-plane with boundary line BC, opposite A.",
+      "contentType": "Image",
+      "interaction": "Continue",
+      "saveFact": true,
+      "imageData": {
+        "imageName": "barycentric-lambda1(2).png",
+        "height": 560
+      },
+      "factData": {
+        "text1": "Barycentric coords with negative weights",
+        "text2": "If one weight is negative, the point lies in the half-plane opposite the corresponding vertex.",
+        "speaker": "Assistant"
+      }
+    },
+    {
+      "speaker": "Assistant",
+      "message": "Depending on which weight is negative, P ends up outside across that vertex.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Teacher",
+      "message": "And if exactly one weight is negative, it always ends up in one of these three regions outside the triangle.",
+      "contentType": "Image",
+      "interaction": "Continue",
+      "imageData": {
+        "imageName": "barycentric-segments(2).png",
+        "height": 560
+      }
+    },
+    {
+      "speaker": "Assistant",
+      "message": "And what if two weights are negative and one positive?",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Well, let's say α and β are negative, and γ is positive.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Negative α tells us that...",
+      "contentType": "OnlyText",
+      "interaction": "MultipleChoice",
+      "multipleChoice": {
+        "answers": [
+          {
+            "text": "P is in the half-plane, with boundary line BC, containing A.",
+            "isCorrect": false
+          },
+          {
+            "text": "P is in the half-plane, with boundary line BC, opposite A.",
+            "isCorrect": true
+          }
+        ]
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Negative β tells us that...",
+      "contentType": "OnlyText",
+      "interaction": "MultipleChoice",
+      "multipleChoice": {
+        "answers": [
+          {
+            "text": "P is in the half-plane, with boundary line BC, opposite A.",
+            "isCorrect": false
+          },
+          {
+            "text": "P is in the half-plane, with boundary line AC, opposite B.",
+            "isCorrect": true
+          }
+        ]
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "And if we now combine these two half-planes, we find that P is in the region outside the triangle across vertex C.",
+      "contentType": "Image",
+      "interaction": "Continue",
+      "imageData": {
+        "imageName": "barycentric-segments-C.png",
+        "height": 560
+      }
+    },
+    {
+      "speaker": "Teacher",
+      "message": "What’s great is that this method applies in any combination of negative weights",
+      "contentType": "Image",
+      "interaction": "Continue",
+      "imageData": {
+        "imageName": "barycentric-segments.png",
+        "height": 560
+      }
+    },
+    {
+      "speaker": "Assistant",
+      "message": "Wow! That’s powerful. So, we can determine a point’s position relative to the triangle just by looking at the signs of its barycentric coordinates.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    },
+    {
+      "speaker": "Teacher",
+      "message": "Exactly! Go explore this further in the practice exercises.",
+      "contentType": "OnlyText",
+      "interaction": "Continue"
+    }
+  ]
+}

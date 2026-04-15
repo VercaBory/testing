@@ -1,0 +1,208 @@
+{
+    "title": "Introduction to Coordinate Systems",
+    "description": "Lesson about different coordinate systems, including 1D, 2D, 3D Cartesian, polar, spherical, and barycentric coordinates.",
+    "pathToSources": "Courses/MathForComputerGraphics/Chapter 1/Block 2/",
+    "steps": [
+        {
+            "speaker": "Assistant",
+            "message": "Hey folks! Today, we’re diving into the world of coordinate systems.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "They’re like different “languages” for describing the position of points.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Let’s start with the simplest one: the number line.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Every point is represented by a single number, such as 3 or -2, which stands for its signed distance from the origin (at 0).",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "number-line.png"
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "We can also say that the number line is the 1D Cartesian coordinate system.",
+            "contentType": "OnlyText",
+            "interaction": "Continue",
+            "saveFact": true,
+            "factData": {
+                "text1": "Number line",
+                "text": "is the 1D Cartesian coordinate system.",
+                "speaker": "Teacher"
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Now, let's step up into 2D...",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "A 2D Cartesian system consists of two perpendicular axes meeting at the origin.",
+            "contentType": "OnlyText",
+            "interaction": "Continue",
+            "saveFact": true,
+            "factData": {
+                "text1": "Cartesian coordinate system in 2D",
+                "text2": "consists of two perpendicular axes meeting at the origin.",
+                "speaker": "Teacher"
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Any point P is described by an ordered pair [x, y], giving its signed distances from the two axes.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "saveFact": true,
+            "imageData": {
+                "imageName": "cartesian(1).png",
+                "height": 500
+            },
+            "factData": {
+                "text1": "Point in 2D Cartesian coordinates",
+                "text2": "is described by an ordered pair [x, y], giving its signed distances from the two axes.",
+                "speaker": "Teacher"
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "And as we all know, the Cartesian coordinates extend naturally to 3D: [x,y,z].",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "But Cartesian is not the only game in town! Enter polar coordinates.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Here, a point is given by a distance from the origin (r), \nand an angle (θ).",
+            "contentType": "OnlyText",
+            "interaction": "Continue",
+            "saveFact": true,
+            "factData": {
+                "text1": "Polar coordinates",
+                "text2": "A point is given by a distance from the origin (r), and an angle (θ).",
+                "speaker": "Teacher"
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Example: point at coordinates (r=2, θ=30°) is 2 units from the origin, at a 30° angle from the positive x-axis.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "polar.png",
+                "height": 500
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Here’s a comparison of Cartesian and polar coordinates for the same point.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "polar vs cartesian 1.png",
+                "height": 500
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Fascinating! Now, what do we have to add to extend polar coordinates in 2D to spherical coordinates in 3D?",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "One more angle",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "One more distance",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "In the spherical coordinate system, a point is given by (ρ, θ, φ): the distance from the origin, one angle for latitude, and one for longitude.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "saveFact": true,
+            "imageData": {
+                "imageName": "spherical.png",
+                "height": 400
+            },
+            "factData": {
+                "text1": "Spherical coordinates",
+                "text2": "A point is given by (ρ, θ, φ): the distance from the origin, one angle for latitude, and one for longitude.",
+                "speaker": "Teacher"
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "And here’s a fun one you might not have heard of: barycentric coordinates. They are motivated by the problem of finding the center of gravity.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Barycentric coordinates describe a point as a weighted combination of reference points.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "barycentric-ilustration.png",
+                "height": 400
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Super useful in computer graphics for things like interpolation and shading.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Let’s recap with some flashcards!",
+            "contentType": "OnlyText",
+            "interaction": "Flashcards",
+            "flashcards": [
+                {
+                    "frontText": "What is the 1D Cartesian coordinate system called?",
+                    "backText": "The number line."
+                },
+                {
+                    "frontText": "How do Cartesian coordinates describe a point in 2D?",
+                    "backText": "With an ordered \npair [x, y]."
+                },
+                {
+                    "frontText": "How do polar coordinates describe a point?",
+                    "backText": "By distance from origin r and angle θ."
+                },
+                {
+                    "frontText": "What are the three values in spherical coordinates?",
+                    "backText": "Distance ρ, polar angle θ, azimuthal angle φ (also called latitude and longitude)."
+                },
+                {
+                    "frontText": "What special property do barycentric coordinates have?",
+                    "backText": "They use reference points and weights that sum to 1."
+                }
+            ]
+        }
+    ]
+}

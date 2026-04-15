@@ -1,0 +1,29 @@
+{
+    "title": "Practice exercises for Explicit, Implicit & Parametric",
+    "pathToSources": "Courses/MathForComputerGraphics/Chapter 1/Block 1/",
+    "steps": [
+        {
+            "question": "Which of the following is an implicit definition?",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "text": "y = 3x + 1",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "x = t², y = t + 1",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "x² + y² = 9",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "S = {(x, y) | x ∈ ℝ, y = sin(x)}",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        }
+    ]
+}

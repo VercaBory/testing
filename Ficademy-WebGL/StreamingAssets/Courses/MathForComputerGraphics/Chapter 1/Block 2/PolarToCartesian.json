@@ -1,0 +1,357 @@
+{
+    "title": "Converting Polar to Cartesian",
+    "description": "Pilot must convert star positions from polar to Cartesian coordinates to navigate.",
+    "pathToSources": "Courses/MathForComputerGraphics/Chapter 1/Block 2/",
+    "steps": [
+        {
+            "speaker": "Assistant",
+            "message": "Captain, we located the stars on the radar. Let's go collect them!",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "gridBounds": {
+                        "minX": -2,
+                        "maxX": 2,
+                        "minY": -1,
+                        "maxY": 2
+                    },
+                    "gridHeight": 550,
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true,
+                    "showZeroLabel": true
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "rocket1",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "rocket",
+                                "tag": "Rocket",
+                                "position": [
+                                    -1.732,
+                                    1
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star1",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "star",
+                                "tag": "Star",
+                                "position": [
+                                    2,
+                                    0
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star2",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "star",
+                                "tag": "Star",
+                                "position": [
+                                    1.414,
+                                    1.414
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star3",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "star",
+                                "tag": "Star",
+                                "position": [
+                                    -1,
+                                    1.732
+                                ],
+                                "rotation": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Oh no, our navigation system works in Cartesian coordinates — but all nearby stars are listed in polar coordinates.",
+            "contentType": "Geometry",
+            "interaction": "None"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Stars: (2, 0°), (2, 45°), (2, 120°)",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Teacher",
+            "message": "We need to convert their positions before we can navigate.",
+            "contentType": "OnlyText",
+            "interaction": "Continue"
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Convert the star’s position (2, 0°) to Cartesian coordinates:",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "id": "a1",
+                        "text": "[2, 0]",
+                        "isCorrect": true,
+                        "feedback": "We need formulas x = r cos θ and y = r sin θ."
+                    },
+                    {
+                        "id": "a2",
+                        "text": "[0, 2]",
+                        "isCorrect": false,
+                        "feedback": "The formula is x = r·cos θ and y = r·sin θ. Besides, 0° means all on the x-axis."
+                    },
+                    {
+                        "id": "a3",
+                        "text": "[−2, 0]",
+                        "isCorrect": false,
+                        "feedback": "The formula is x = r·cos θ and y = r·sin θ. Besides, at 0, the x should be positive."
+                    },
+                    {
+                        "id": "a4",
+                        "text": "[√2, √2]",
+                        "isCorrect": false,
+                        "feedback": "The formula is x = r·cos θ and y = r·sin θ. Besides, that corresponds to 45°, not 0°."
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Well done! You can convert polar coordinates to Cartesian coordinates (x, y) using the formulas x = r cos θ and y = r sin θ.",
+            "contentType": "Image",
+            "interaction": "Continue",
+            "imageData": {
+                "imageName": "polarToCartesian.png",
+                "height": 400
+            },
+            "saveFact": true,
+            "factData": {
+                "text1": "Convert Polar to Cartesian",
+                "text2": "x = r cos θ; y = r sin θ",
+                "speaker": "Teacher"
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "Now convert the star’s position (2, 45°) to Cartesian coordinates:",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "id": "b1",
+                        "text": "[1, 1]",
+                        "isCorrect": false,
+                        "feedback": "Check the radius again."
+                    },
+                    {
+                        "id": "b2",
+                        "text": "[−1, 1]",
+                        "isCorrect": false,
+                        "feedback": "That would be in the second quadrant."
+                    },
+                    {
+                        "id": "b3",
+                        "text": "[−√2, √2]",
+                        "isCorrect": false,
+                        "feedback": "That corresponds to 135°, not 45°."
+                    },
+                    {
+                        "id": "b4",
+                        "text": "[√2, √2]",
+                        "isCorrect": true,
+                        "feedback": "Correct! At 45°, both x and y are equal."
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Assistant",
+            "message": "And lastly convert the star’s position (2, 120°) to Cartesian coordinates:",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "id": "c1",
+                        "text": "[1, √3]",
+                        "isCorrect": false,
+                        "feedback": "Check the sign of x."
+                    },
+                    {
+                        "id": "c2",
+                        "text": "[−1, √3]",
+                        "isCorrect": true,
+                        "feedback": "Correct! At 120°, the x value is negative, and y is positive."
+                    },
+                    {
+                        "id": "c3",
+                        "text": "[−1, −√3]",
+                        "isCorrect": false,
+                        "feedback": "That would correspond to 240°."
+                    },
+                    {
+                        "id": "c4",
+                        "text": "[−√3, 1]",
+                        "isCorrect": false,
+                        "feedback": "That’s not the right ratio for sine and cosine at 120°."
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Good job! Now that we have our position in polar coordinates, I notice something interesting… Can you spot it?",
+            "contentType": "OnlyText",
+            "interaction": "MultipleChoice",
+            "multipleChoice": {
+                "answers": [
+                    {
+                        "id": "d1",
+                        "text": "Same angle.",
+                        "isCorrect": false,
+                        "feedback": "Not quite — their angles differ."
+                    },
+                    {
+                        "id": "d2",
+                        "text": "All positions are in the first quadrant.",
+                        "isCorrect": false,
+                        "feedback": "Not all of them are in the first quadrant."
+                    },
+                    {
+                        "id": "d3",
+                        "text": "Same radius.",
+                        "isCorrect": true,
+                        "feedback": "Yes! They all have radius 2."
+                    }
+                ]
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Yes! So they all lay on the same circle, and our rocket as well.",
+            "contentType": "Geometry",
+            "interaction": "Continue",
+            "geometry": {
+                "isNewScene": true,
+                "properties": {
+                    "gridBounds": {
+                        "minX": -2,
+                        "maxX": 2,
+                        "minY": -1,
+                        "maxY": 2
+                    },
+                    "gridHeight": 550,
+                    "showGridLines": true,
+                    "showAxes": true,
+                    "showNumbers": true,
+                    "showZeroLabel": true
+                },
+                "geometryObjects": {
+                    "Add": [
+                        {
+                            "id": "circle2",
+                            "objectType": "Circle",
+                            "circleData": {
+                                "center": [
+                                    0,
+                                    0
+                                ],
+                                "radius": 2,
+                                "filled": false
+                            }
+                        },
+                        {
+                            "id": "rocket1",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "rocket",
+                                "tag": "Rocket",
+                                "position": [
+                                    -1.732,
+                                    1
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star1",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "star",
+                                "tag": "Star",
+                                "position": [
+                                    2,
+                                    0
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star2",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "star",
+                                "tag": "Star",
+                                "position": [
+                                    1.414,
+                                    1.414
+                                ],
+                                "rotation": 0
+                            }
+                        },
+                        {
+                            "id": "star3",
+                            "objectType": "Icon",
+                            "iconData": {
+                                "iconName": "star",
+                                "tag": "Star",
+                                "position": [
+                                    -1,
+                                    1.732
+                                ],
+                                "rotation": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "speaker": "Teacher",
+            "message": "Let’s launch in that circular trajectory, shall we?",
+            "contentType": "Transformation",
+            "interaction": "Continue",
+            "transformation": {
+                "id": "traj2",
+                "objectId": "rocket1",
+                "type": "Trajectory",
+                "trajectoryData": {
+                    "expression": "sqrt(4 - x^2)",
+                    "usage": "UseAsTrajectory",
+                    "domainStart": -2,
+                    "domainEnd": 1.9
+                },
+                "duration": 3
+            }
+        }
+    ]
+}
